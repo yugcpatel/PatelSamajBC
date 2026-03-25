@@ -33,7 +33,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero hero-small">
         <div class="hero-content">
             <h1>Sponsors <br> Patel Samaj BC</h1>
             <h2 class="gujarati-title">પટેલ સમાજ - બ્રિટિશ કોલંબિયા</h2>
@@ -54,6 +54,15 @@
         </div>
     </section>
 
+    <!-- Why Sponsor Us Section -->
+    <section class="why-sponsor" style="max-width: 900px; margin: 3rem auto; padding: 2rem; background: #fff; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); text-align: center; border-bottom: 4px solid var(--primary-color);">
+        <h2 style="color: var(--primary-color); margin-bottom: 1rem;">Why Sponsor Patel Samaj BC?</h2>
+        <p style="font-size: 1.1rem; line-height: 1.8; color: #555; margin-bottom: 1.5rem;">
+            Your generous sponsorship helps us organize meaningful cultural events, support new students and immigrants, and keep the Gujarati community in British Columbia vibrant and connected. In return, your business gains visibility among thousands of our community members.
+        </p>
+        <a href="reachUS.php" style="display: inline-block; padding: 0.8rem 1.5rem; background: var(--primary-color); color: #fff; border-radius: 6px; text-decoration: none; font-weight: 600;">Become a Sponsor Today</a>
+    </section>
+
     <!-- Sponsors Section -->
     <main class="sponsors-container">
         <?php
@@ -66,10 +75,10 @@
                 </div>
                 <div class='sponsor-card'>
                     <div class='sponsor-image'>";
-                if (!empty($sponsor['image'])) {
+                if (!empty($sponsor['image']) && file_exists("img/" . $sponsor['image'])) {
                     echo "<img src='img/" . htmlspecialchars($sponsor['image']) . "' alt='" . htmlspecialchars($sponsor['name']) . "'>";
                 } else {
-                    echo "<img src='img/Logo.jpg' alt='Default Sponsor'>";
+                    echo "<img src='img/sponsor_placeholder.png' alt='Default Sponsor' style='object-fit: cover;'>";
                 }
                 echo "</div>
                     <div class='sponsor-details'>
@@ -99,8 +108,12 @@
             <a href="https://www.facebook.com/groups/5673387866058370" target="_blank">Facebook</a> |
             <a href="https://www.youtube.com/@PatelSamajBC" target="_blank">YouTube</a>
         </p>
+        <p style="font-size: 0.8rem; opacity: 0.7; margin-top: 15px; max-width: 600px; margin-left: auto; margin-right: auto; line-height: 1.5;">
+            Note: This website is made by Yug Patel for project use only and is not for commercial use. It is not officially affiliated with Patel Samaj Canada, and is created so I do not get issues from Patel Samaj Canada.
+        </p>
     </footer>
 
+    <script src="animations.js"></script>
     <script>
         window.addEventListener("scroll", function () {
             const nav = document.querySelector("nav");

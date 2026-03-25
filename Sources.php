@@ -24,7 +24,7 @@
            
         </ul>
     </nav>
-    <section class="hero">
+    <section class="hero hero-small">
         <div class="hero-content">
             <h1>Sources & Attributions</h1>
         </div>
@@ -46,7 +46,11 @@
     </main>
     <footer>
         <p>&copy; 2025 Patel Brotherhood Canada. All rights reserved.</p>
+        <p style="font-size: 0.8rem; opacity: 0.7; margin-top: 15px; max-width: 600px; margin-left: auto; margin-right: auto; line-height: 1.5; text-align: center;">
+            Note: This website is made by Yug Patel for project use only and is not for commercial use. It is not officially affiliated with Patel Samaj Canada, and is created so I do not get issues from Patel Samaj Canada.
+        </p>
     </footer>
+    <script src="animations.js"></script>
     <script>
         window.addEventListener("scroll", function () {
             const nav = document.querySelector("nav");

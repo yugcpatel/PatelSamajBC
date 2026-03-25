@@ -33,7 +33,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero hero-small">
         <div class="hero-content">
             <h1>Upcoming Events</h1>
             <h2 class="gujarati-title">પટેલ સમાજ - બ્રિટિશ કોલંબિયા</h2>
@@ -54,6 +54,14 @@
         </div>
     </section>
 
+    <!-- Why Attend Section -->
+    <section class="why-attend" style="max-width: 900px; margin: 3rem auto; padding: 2.5rem; background: #fff; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); text-align: center; border-bottom: 4px solid var(--primary-color);">
+        <h2 style="color: var(--primary-color); margin-bottom: 1rem;">Why Attend Our Events?</h2>
+        <p style="font-size: 1.1rem; line-height: 1.8; color: #555;">
+            Our events are the heart of the Patel Samaj BC community. Whether it's the joy of Navratri, the warmth of the Summer Picnic, or the networking at our Gala dinners, each event is an opportunity to celebrate our culture, make lifelong friends, and stay connected with our roots.
+        </p>
+    </section>
+
     <!-- Events Container -->
     <main class="events-container">
         <?php
@@ -70,10 +78,10 @@
                         <p>" . nl2br(htmlspecialchars($event['description'])) . "</p>
                     </div>
                     <div class='event-image'>";
-                if (!empty($event['image'])) {
+                if (!empty($event['image']) && file_exists("img/" . $event['image'])) {
                     echo "<img src='img/" . htmlspecialchars($event['image']) . "' alt='" . htmlspecialchars($event['title']) . "'>";
                 } else {
-                    echo "<img src='img/Logo.jpg' alt='Default Event'>";
+                    echo "<img src='img/event_placeholder.png' alt='Default Event' style='object-fit: cover;'>";
                 }
                 echo "</div>
                 </div>
@@ -99,8 +107,12 @@
             <a href="https://www.facebook.com/groups/5673387866058370" target="_blank">Facebook</a> |
             <a href="https://www.youtube.com/@PatelSamajBC" target="_blank">YouTube</a>
         </p>
+        <p style="font-size: 0.8rem; opacity: 0.7; margin-top: 15px; max-width: 600px; margin-left: auto; margin-right: auto; line-height: 1.5;">
+            Note: This website is made by Yug Patel for project use only and is not for commercial use. It is not officially affiliated with Patel Samaj Canada, and is created so I do not get issues from Patel Samaj Canada.
+        </p>
     </footer>
 
+    <script src="animations.js"></script>
     <script>
         window.addEventListener("scroll", function () {
             const nav = document.querySelector("nav");

@@ -33,7 +33,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero hero-small">
         <div class="hero-content">
             <h1>Board Members <br> Patel Samaj BC</h1>
             <h2 class="gujarati-title">પટેલ સમાજ - બ્રિટિશ કોલંબિયા</h2>
@@ -52,6 +52,14 @@
                 </a>
             </div>
         </div>
+    </section>
+
+    <!-- Message from the Board Section -->
+    <section class="president-message" style="max-width: 900px; margin: 3rem auto; padding: 2.5rem; background: #fff; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); text-align: center; border-bottom: 4px solid var(--primary-color);">
+        <h2 style="color: var(--primary-color); margin-bottom: 1rem;">Welcome from the Board</h2>
+        <p style="font-size: 1.1rem; line-height: 1.8; color: #444; font-style: italic;">
+            "On behalf of Patel Samaj of BC, our dedicated board members and trustees work tirelessly to preserve our rich Gujarati heritage, foster community growth, and create sustainable opportunities for future generations. Together, we are building a stronger, more connected community."
+        </p>
     </section>
 
     <!-- Board Members Section -->
@@ -134,7 +142,11 @@
             <a href="https://www.facebook.com/groups/5673387866058370" target="_blank">Facebook</a> 
             <a href="https://www.youtube.com/@PatelSamajBC" target="_blank">YouTube</a>
         </p>
+        <p style="font-size: 0.8rem; opacity: 0.7; margin-top: 15px; max-width: 600px; margin-left: auto; margin-right: auto; line-height: 1.5;">
+            Note: This website is made by Yug Patel for project use only and is not for commercial use. It is not officially affiliated with Patel Samaj Canada, and is created so I do not get issues from Patel Samaj Canada.
+        </p>
     </footer>
+    <script src="animations.js"></script>
     <script>
         window.addEventListener("scroll", function () {
             const nav = document.querySelector("nav");

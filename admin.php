@@ -74,7 +74,7 @@ if (isset($_GET['delete_event'])) {
         </ul>
     </nav>
 
-    <section class="hero">
+    <section class="hero hero-small">
         <div class="hero-content">
             <h1>Admin Panel</h1>
         </div>
@@ -82,7 +82,8 @@ if (isset($_GET['delete_event'])) {
 
     <main class="container">
         <?php if (!isset($_SESSION['admin'])): ?>
-            <h2>Login</h2>
+            <h2 style="text-align:center; margin-bottom:0.5rem;">Admin Login</h2>
+            <p style="text-align: center; margin-bottom: 2rem; color: #555;">Authorized personnel only. Please log in to manage events, contact messages, and board information.</p>
             <?php if (!empty($error))
                 echo "<p style='color:red;'>$error</p>"; ?>
             <form method="POST" style="display:flex; flex-direction:column; max-width:300px;">
@@ -207,7 +208,11 @@ if (isset($_GET['delete_event'])) {
     </main>
     <footer>
         <p>&copy; 2025 Patel Brotherhood Canada. All rights reserved.</p>
+        <p style="font-size: 0.8rem; opacity: 0.7; margin-top: 15px; max-width: 600px; margin-left: auto; margin-right: auto; line-height: 1.5; text-align: center;">
+            Note: This website is made by Yug Patel for project use only and is not for commercial use. It is not officially affiliated with Patel Samaj Canada, and is created so I do not get issues from Patel Samaj Canada.
+        </p>
     </footer>
+    <script src="animations.js"></script>
 </body>
 
 </html>

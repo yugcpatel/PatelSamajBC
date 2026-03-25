@@ -121,7 +121,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero hero-small">
         <div class="hero-content">
             <h1>Contact Form <br> Patel Samaj BC</h1>
             <h2 class="gujarati-title">પટેલ સમાજ - બ્રિટિશ કોલંબિયા</h2>
@@ -139,6 +139,23 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" /> WhatsApp
                 </a>
             </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" style="max-width: 800px; margin: 3rem auto; padding: 2.5rem; background: #fff; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-left: 4px solid var(--primary-color);">
+        <h2 style="color: var(--primary-color); margin-bottom: 1.5rem;">Frequently Asked Questions</h2>
+        <div style="margin-bottom: 1.5rem;">
+            <h3 style="font-size: 1.15rem; color: #333; margin-bottom: 0.5rem;">How do I become a member?</h3>
+            <p style="color: #666; font-size: 1rem; line-height: 1.6;">You can sign up online or reach out via this contact form indicating your interest in joining the Samaj.</p>
+        </div>
+        <div style="margin-bottom: 1.5rem;">
+            <h3 style="font-size: 1.15rem; color: #333; margin-bottom: 0.5rem;">Can I volunteer at events?</h3>
+            <p style="color: #666; font-size: 1rem; line-height: 1.6;">Yes absolutely! We always welcome active community members to help out with our annual events.</p>
+        </div>
+        <div>
+            <h3 style="font-size: 1.15rem; color: #333; margin-bottom: 0.5rem;">How can I sponsor an event?</h3>
+            <p style="color: #666; font-size: 1rem; line-height: 1.6;">Check out our Sponsors page or send us a message below detailing your business and sponsorship interest.</p>
         </div>
     </section>
 
@@ -185,7 +202,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <a href="https://www.facebook.com/groups/5673387866058370" target="_blank">Facebook</a> |
             <a href="https://www.youtube.com/@PatelSamajBC" target="_blank">YouTube</a>
         </p>
+        <p style="font-size: 0.8rem; opacity: 0.7; margin-top: 15px; max-width: 600px; margin-left: auto; margin-right: auto; line-height: 1.5;">
+            Note: This website is made by Yug Patel for project use only and is not for commercial use. It is not officially affiliated with Patel Samaj Canada, and is created so I do not get issues from Patel Samaj Canada.
+        </p>
     </footer>
+
+    <script src="animations.js"></script>
 </body>
 
 </html>

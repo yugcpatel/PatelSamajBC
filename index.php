@@ -57,23 +57,46 @@
     <!-- About Section -->
     <section class="about">
         <h2>Let's Socially Connect with Patel Samaj</h2>
-        <!-- <p class="gujarati-text">ચાલો સામાજિક રીતે જોડાઇએ પટેલ સમાજ</p> -->
-        <p>We are registered Samaj in British Columbia since 1977<br>
-            <!-- <span class="gujarati-text">અમે બ્રિટિશ કોલંબિયામાં 1977 થી સમાજ નોંધાયેલ છે…</span> -->
-        </p>
+        <p>We are a registered Samaj in British Columbia since 1977</p>
 
-        <ol class="about-list">
-            <li><strong>Socialization of Patel / Gujarati Community in British Columbia</strong><br>
-                <!-- <span class="gujarati-text">બ્રિટિશ કોલંબિયામાં પટેલ/ગુજરાતી સમુદાયનું સામાજિકરણ</span> -->
-            </li>
-            <li><strong>Supporting Students and New Immigrants</strong><br>
-                <!-- <span class="gujarati-text">વિદ્યાર્થીઓ અને નવા ઇમિગ્રન્ટ્સને સહાય</span> -->
-            </li>
-            <li><strong>Promoting Gujarati Businesses and Supporting Community with employment
-                    opportunities</strong><br>
-                <!-- <span class="gujarati-text">ગુજરાતી વ્યવસાયોને પ્રોત્સાહન અને રોજગારની તકો સાથે સમાજને સહાય</span> -->
-            </li>
-        </ol>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">🤝</div>
+                <h3>Community Connection</h3>
+                <p>Connecting the Patel and Gujarati Community across British Columbia through active socialization and vibrant cultural events.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🎓</div>
+                <h3>Student Support</h3>
+                <p>Providing dedicated guidance, resources, and essential support for newly arrived students and immigrants settling in BC.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">💼</div>
+                <h3>Business Network</h3>
+                <p>Actively promoting Gujarati businesses and uniting community members with valuable employment and networking opportunities.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Highlight Section -->
+    <section class="events-highlight">
+        <h2>Upcoming & Recent Activities</h2>
+        <p>Join us at our next gathering to celebrate our vibrant culture and community spirit.</p>
+        <div class="events-preview-wrapper">
+            <div class="event-preview">
+                <h3>Annual Summer Picnic</h3>
+                <p>A fun-filled day with traditional food, games, and networking for the whole family to enjoy together.</p>
+            </div>
+            <div class="event-preview">
+                <h3>Navratri Mahotsav</h3>
+                <p>Celebrate the auspicious festival of nine nights with authentic Garba, Dandiya, and live music.</p>
+            </div>
+            <div class="event-preview">
+                <h3>Diwali Gala Dinner</h3>
+                <p>Come together to celebrate the festival of lights with an exquisite dinner and cultural performances.</p>
+            </div>
+        </div>
+        <a href="event.php" style="margin-top: 2rem; display: inline-block;" class="btn-primary">View All Events</a>
     </section>
 
     <!-- Sponsors Section -->
@@ -130,7 +153,11 @@
             <a href="https://www.facebook.com/groups/5673387866058370" target="_blank">Facebook</a> |
             <a href="https://www.youtube.com/@PatelSamajBC" target="_blank">YouTube</a>
         </p>
+        <p style="font-size: 0.8rem; opacity: 0.7; margin-top: 15px; max-width: 600px; margin-left: auto; margin-right: auto; line-height: 1.5;">
+            Note: This website is made by Yug Patel for project use only and is not for commercial use. It is not officially affiliated with Patel Samaj Canada, and is created so I do not get issues from Patel Samaj Canada.
+        </p>
     </footer>
+    <script src="animations.js"></script>
     <script>
         window.addEventListener("scroll", function () {
             const nav = document.querySelector("nav");

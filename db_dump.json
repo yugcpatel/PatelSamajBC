@@ -1,0 +1,126 @@
+{
+    "events": [
+        {
+            "id": "2",
+            "title": "Summer Picnic -2",
+            "description": "Bring chairs, mats, swimwear, and essentials for your family. Enjoy games and food.",
+            "image": "event-map2.png"
+        },
+        {
+            "id": "3",
+            "title": "Patel Samaj Cricket Tournament",
+            "description": "Green hard tennis ball tournament with 10 overs per match.",
+            "image": "cricket-event.png"
+        },
+        {
+            "id": "4",
+            "title": "Summer Picnic \u2013 2",
+            "description": "Games, food, and socialization activities for all members and non-members.",
+            "image": "picnic-event2.png"
+        },
+        {
+            "id": "5",
+            "title": "Patel Samaj Navratri",
+            "description": "Celebrate Navratri with music and traditional Garba dance.",
+            "image": "navratri-event.png"
+        },
+        {
+            "id": "6",
+            "title": "Patel Samaj Diwali",
+            "description": "Join us for the Festival of Lights with dinner and performances.",
+            "image": "diwali-event.png"
+        }
+    ],
+    "sponsors": [
+        {
+            "id": "1",
+            "name": "Mr. Manu Sharma",
+            "details": "Trueman Immigration Services",
+            "image": "trueman.png"
+        },
+        {
+            "id": "2",
+            "name": "Mrs. Tanu Sharma",
+            "details": "Trueman Immigration Services",
+            "image": "trueman.png"
+        },
+        {
+            "id": "3",
+            "name": "Mr. Kirtesh Patel",
+            "details": "Sponsor of Patel Samaj BC 2025",
+            "image": "kirtesh.png"
+        },
+        {
+            "id": "4",
+            "name": "Mrs. Sneha Patel",
+            "details": "Sponsor of Patel Samaj BC 2025",
+            "image": "kirtesh.png"
+        },
+        {
+            "id": "5",
+            "name": "Mr. Ashish Patel",
+            "details": "Major Sponsor",
+            "image": "ashish.png"
+        },
+        {
+            "id": "6",
+            "name": "Mrs. Avani Patel",
+            "details": "Major Sponsor",
+            "image": "ashish.png"
+        },
+        {
+            "id": "7",
+            "name": "Mr. Suhas Kulkarni",
+            "details": "Donor",
+            "image": "suhas.png"
+        },
+        {
+            "id": "8",
+            "name": "Ms. Naina Gandevia",
+            "details": "Gold Sponsor",
+            "image": "gandevia.png"
+        },
+        {
+            "id": "9",
+            "name": "Mr. Deepak Gandevia",
+            "details": "Gold Sponsor",
+            "image": "gandevia.png"
+        },
+        {
+            "id": "10",
+            "name": "Mr. Mayank Patel",
+            "details": "Silver Sponsor",
+            "image": "mayank.png"
+        },
+        {
+            "id": "11",
+            "name": "Mrs. Tejal Laul",
+            "details": "Silver Sponsor",
+            "image": "tejal.png"
+        },
+        {
+            "id": "12",
+            "name": "Dr. Keval Patel",
+            "details": "Bronze Sponsor",
+            "image": "keval.png"
+        },
+        {
+            "id": "13",
+            "name": "Mr. Harshad Solanki",
+            "details": "Donor",
+            "image": "harshad.png"
+        },
+        {
+            "id": "14",
+            "name": "Mr. Mehul Parmar",
+            "details": "Donor",
+            "image": "harshad.png"
+        },
+        {
+            "id": "15",
+            "name": "Mrs. Sonali Sharma",
+            "details": "Contributor",
+            "image": "sonali.png"
+        }
+    ]
+}
