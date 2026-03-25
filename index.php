@@ -80,23 +80,23 @@
 
     <!-- Events Highlight Section -->
     <section class="events-highlight">
-        <h2>Upcoming & Recent Activities</h2>
-        <p>Join us at our next gathering to celebrate our vibrant culture and community spirit.</p>
+        <h2>Upcoming 2026 Events</h2>
+        <p>Join us at our upcoming events to build and unite the Gujarati community!</p>
         <div class="events-preview-wrapper">
             <div class="event-preview">
-                <h3>Annual Summer Picnic</h3>
-                <p>A fun-filled day with traditional food, games, and networking for the whole family to enjoy together.</p>
+                <h3>Annual General Meeting</h3>
+                <p>January 24th, 2026 at Fleetwood Community Center. Your views and votes matter!</p>
             </div>
             <div class="event-preview">
-                <h3>Navratri Mahotsav</h3>
-                <p>Celebrate the auspicious festival of nine nights with authentic Garba, Dandiya, and live music.</p>
+                <h3>Shri Satyanarayan Puja</h3>
+                <p>March 15th, 2026 at The Royal King Banquets Hall. Join us for this divine free event.</p>
             </div>
             <div class="event-preview">
-                <h3>Diwali Gala Dinner</h3>
-                <p>Come together to celebrate the festival of lights with an exquisite dinner and cultural performances.</p>
+                <h3>Menopause Seminar</h3>
+                <p>Summer 2026. An empowering educational seminar on menopause and pelvic physio for all ladies.</p>
             </div>
         </div>
-        <a href="event.php" style="margin-top: 2rem; display: inline-block;" class="btn-primary">View All Events</a>
+        <a href="event.php" style="margin-top: 2rem; display: inline-block;" class="btn-primary">View Full 2026 Calendar</a>
     </section>
 
     <!-- Sponsors Section -->
