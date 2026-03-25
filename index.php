@@ -102,41 +102,65 @@
     <!-- Sponsors Section -->
     <section class="sponsors">
         <div class="sponsor-text">
-            <h2>THANK YOU 2024 SPONSORS</h2>
-            <?php
-            $stmt = $pdo->query("SELECT name FROM sponsors LIMIT 3");
-            while ($row = $stmt->fetch()) {
-                echo "<p>" . htmlspecialchars($row['name']) . "</p>";
-            }
-            ?>
-            <a href="sponsors.php">
-                <button class="btn-primary">PATEL SAMAJ SPONSOR</button>
-            </a>
+            <h2 style="color: var(--primary-color); margin-bottom: 1.5rem;">THANK YOU 2026 SPONSORS</h2>
+            <div class="features-grid" style="margin-top: 0; margin-bottom: 2rem; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
+                <?php
+                $stmt = $pdo->query("SELECT name FROM sponsors LIMIT 3");
+                while ($row = $stmt->fetch()) {
+                    echo "<div class='feature-card' style='padding: 1.5rem; transition: transform 0.3s ease;'><h3 style='margin: 0; font-size: 1.1rem;'>" . htmlspecialchars($row['name']) . "</h3></div>";
+                }
+                ?>
+            </div>
+            <a href="sponsors.php" class="btn-primary">View All Sponsors</a>
         </div>
     </section>
 
     <!-- Membership Section -->
-    <section class="membership">
-        <h2>BECOME A MEMBER</h2>
-        <p>JOIN TODAY!</p>
-        <ul>
-            <li>Annual Family Membership - $40</li>
-            <li>Annual Single Membership - $25</li>
-            <li>Annual Student Membership (18 yrs+) - $15</li>
-            <li>Annual Senior Membership (65 yrs+) - Free</li>
-        </ul>
-        <p><strong>Lifetime* Membership:</strong><br> Family Membership - $400</p>
+    <section class="membership" style="padding: 2rem; max-width: 900px;">
+        <h2 style="color: var(--primary-color); font-size: 1.5rem;">BECOME A MEMBER</h2>
+        <p style="margin-bottom: 2rem; font-size: 0.95rem; color: #555;">Join today and be an integral part of our vibrant community!</p>
+        
+        <div class="features-grid" style="margin-top: 0; gap: 1.5rem; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+            <div class="feature-card" style="padding: 1.5rem;">
+                <div class="feature-icon" style="font-size: 2rem; margin-bottom: 0.5rem;">👨‍👩‍👧‍👦</div>
+                <h3 style="color: var(--text-dark); font-size: 1.2rem;">Family</h3>
+                <h2 style="font-size: 2rem; margin: 0.5rem 0; color: var(--primary-color);">$40<span style="font-size: 0.9rem; color: #666;">/yr</span></h2>
+                <p style="font-size: 0.9rem; color: #666;">Annual Family</p>
+            </div>
+            <div class="feature-card" style="padding: 1.5rem;">
+                <div class="feature-icon" style="font-size: 2rem; margin-bottom: 0.5rem;">👤</div>
+                <h3 style="color: var(--text-dark); font-size: 1.2rem;">Single</h3>
+                <h2 style="font-size: 2rem; margin: 0.5rem 0; color: var(--primary-color);">$25<span style="font-size: 0.9rem; color: #666;">/yr</span></h2>
+                <p style="font-size: 0.9rem; color: #666;">Annual Single</p>
+            </div>
+            <div class="feature-card" style="padding: 1.5rem;">
+                <div class="feature-icon" style="font-size: 2rem; margin-bottom: 0.5rem;">🎓</div>
+                <h3 style="color: var(--text-dark); font-size: 1.2rem;">Student</h3>
+                <h2 style="font-size: 2rem; margin: 0.5rem 0; color: var(--primary-color);">$15<span style="font-size: 0.9rem; color: #666;">/yr</span></h2>
+                <p style="font-size: 0.9rem; color: #666;">Annual Student (18+)</p>
+            </div>
+            <div class="feature-card" style="padding: 1.5rem; border: 2px solid #ffd700; position: relative;">
+                <div style="position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: #ffd700; color: #000; padding: 2px 10px; border-radius: 10px; font-size: 0.75rem; font-weight: bold;">BEST VALUE</div>
+                <div class="feature-icon" style="font-size: 2rem; margin-bottom: 0.5rem;">⭐</div>
+                <h3 style="color: var(--text-dark); font-size: 1.2rem;">Lifetime</h3>
+                <h2 style="font-size: 2rem; margin: 0.5rem 0; color: #b8860b;">$400<span style="font-size: 0.9rem; color: #666;">/life</span></h2>
+                <p style="font-size: 0.9rem; color: #666;">Lifetime Family</p>
+            </div>
+        </div>
+        <p style="margin-top: 1.5rem; color: #777;">*Annual Senior Membership (65 yrs+) is Completely Free !</p>
     </section>
 
     <!-- Gujarati Business Directory Section -->
-    <section class="business-directory">
-        <p>
+    <section class="business-directory" style="background: linear-gradient(135deg, rgba(0,119,204,0.03), rgba(0,255,204,0.03)); border: 1px solid rgba(0,119,204,0.1);">
+        <div class="feature-icon" style="margin-bottom: 1rem; font-size: 3.5rem;">📱</div>
+        <h2 style="color: var(--primary-color); margin-bottom: 1rem;">Gujarati Business Directory</h2>
+        <p style="font-size: 1.1rem; line-height: 1.8; color: #555; max-width: 750px; margin: 0 auto;">
             Patel Samaj of B.C. is actively consolidating the information of all Gujarati Businesses in B.C.
-            and we are also promoting their businesses for <strong style="color:red;">Free</strong> on our WhatsApp
-            group with more than 1500 Gujaratis connected. If you are a Gujarati Business Person and want to be part of
-            this
-            initiative, please join our WhatsApp group and request to be added. One of our admins will help you!!
+            and we are promoting their businesses for <strong style="color:red;">Free</strong> on our WhatsApp
+            group alongside more than 1500 connected Gujaratis!
         </p>
+        <p style="margin-top: 1rem; color: #555;">If you are a Gujarati Business Person and want to be part of this initiative, please join our WhatsApp group and request to be added.</p>
+        <a href="https://chat.whatsapp.com/" target="_blank" class="btn-primary" style="margin-top: 1.5rem;">Join the WhatsApp Group</a>
     </section>
 
     <!-- Footer -->
