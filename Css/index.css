@@ -1,0 +1,326 @@
+/* Hero Section */
+.hero {
+    background: rgba(0, 0, 0, 0.6) url('../img/Sardar.jpg') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 4rem 2rem;
+    position: relative;
+
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    padding-left: 3rem;
+}
+
+.hero-content h2 {
+    padding-top: 1rem;
+    padding-bottom: 4rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.social-boxes {
+    padding-bottom: 8rem;
+}
+
+/* Page Background */
+body {
+    background: white;
+}
+
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    padding-top: 1rem;
+    display: inline-block;
+    box-shadow: 0 4px 15px rgba(0, 119, 204, 0.4);
+}
+
+.btn-primary:hover {
+    background-color: var(--accent-color);
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 8px 25px rgba(0, 119, 204, 0.6);
+}
+
+/* About Section */
+.about {
+    background: rgba(255, 255, 255, 0.9);
+    margin: 3rem auto;
+    max-width: 900px;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    animation: fadeInUp 1.2s ease-out forwards;
+    backdrop-filter: blur(10px);
+}
+.about:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.about h2 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.about p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.about-list {
+    text-align: left;
+    margin-top: 1.5rem;
+    list-style: decimal;
+    padding-left: 2rem;
+    line-height: 1.8;
+}
+
+li {
+    margin-top: 1rem;
+}
+
+/* Gujarati Text */
+.gujarati-title,
+.gujarati-text {
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #fff;
+    font-size: 2rem;
+}
+
+/* Social Links */
+.social-hero {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+/* Sponsors / Membership / Directory */
+.sponsors,
+.membership,
+.business-directory {
+    background: rgba(255, 255, 255, 0.95);
+    max-width: 900px;
+    margin: 3rem auto;
+    padding: 3rem;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    animation: fadeInUp 1.2s ease-out forwards;
+    backdrop-filter: blur(10px);
+}
+
+.sponsors:hover, .membership:hover, .business-directory:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.business-directory {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.sponsor-text h2 {
+    padding-bottom: 1rem;
+}
+
+.sponsor-text p {
+    padding-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.sponsor-text a {
+    padding-top: 0rem;
+}
+
+
+
+
+.sponsor-image img,
+.membership img,
+.business-directory img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+/* Membership Card */
+.membership {
+    background: #fdfdfd;
+    max-width: 600px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(217, 255, 0, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.membership img {
+    width: 100%;
+    display: block;
+    border-radius: 8px 8px 0 0;
+}
+
+.membership h2 {
+    margin: 0.5rem 0;
+    font-size: 1.8rem;
+    color: var(--primary-color);
+}
+
+.membership p {
+    margin: 1rem 0;
+    font-size: 1.2rem;
+}
+
+.membership ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 20px;
+}
+
+.membership ul li {
+    background: #fafafa;
+    margin: 0.5rem 0;
+    padding: 0.7rem 1rem;
+    border-radius: 6px;
+    box-shadow: inset 0 1px 5px rgba(234, 255, 0, 0.2);
+}
+
+.membership strong {
+    display: block;
+    margin-top: 1rem;
+    color: var(--accent-color);
+}
+
+/* ========== MOBILE STYLES ========== */
+@media (max-width: 768px) {
+    nav .logo-link span {
+        font-size: 1.2rem;
+    }
+
+    nav ul {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li {
+        width: 100%;
+        padding: 0.5rem 0;
+    }
+
+    .hero {
+        padding: 4rem 1rem;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero .gujarati-title {
+        font-size: 1.4rem;
+    }
+
+    .social-hero {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.8rem;
+        margin-top: 1.5rem;
+    }
+
+    .social-hero a {
+        width: 70%;
+        justify-content: center;
+    }
+
+    .about {
+        margin: 2rem 1rem;
+        padding: 1.5rem;
+    }
+
+    .about h2 {
+        font-size: 1.5rem;
+    }
+
+    .about-list {
+        padding-left: 1.2rem;
+        font-size: 0.95rem;
+    }
+
+    .sponsors,
+    .membership,
+    .business-directory {
+        padding: 1.5rem;
+        margin: 2rem 1rem;
+    }
+
+    .sponsor-text h2 {
+        font-size: 1.4rem;
+    }
+
+    .membership h2 {
+        font-size: 1.6rem;
+    }
+
+    .membership ul li {
+        font-size: 0.95rem;
+        padding: 0.5rem;
+    }
+
+    .business-directory {
+        font-size: 0.95rem;
+    }
+
+    .business-directory img {
+        width: 100%;
+    }
+
+    footer {
+        padding: 1.5rem 1rem;
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .social-hero a {
+        width: 90%;
+    }
+
+    .about h2,
+    .membership h2 {
+        font-size: 1.3rem;
+    }
+}

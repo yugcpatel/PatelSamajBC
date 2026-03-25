@@ -1,0 +1,106 @@
+/* Page Background */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: white;
+    background-size: cover;
+    color: var(--text-dark);
+}
+
+/* Hero Section */
+.hero {
+    background: rgba(0, 0, 0, 0.6) url('../img/Sardar.jpg') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 5rem 3rem;
+    position: relative;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+.hero h2 {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+.hero p {
+    font-size: 1.3rem;
+    margin-bottom: 3rem;
+
+}
+
+
+
+/* Sponsors Section */
+.sponsors-container {
+    max-width: 1000px;
+    margin: 3rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 1rem;
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+.sponsor-card {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    gap: 1.5rem;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.sponsor-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.sponsor-image img {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.sponsor-details h2 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.thanks-banner {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.thanks-banner img {
+    width: 80px;
+    display: block;
+    margin: 0 auto 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .sponsor-card {
+        flex-direction: column;
+        text-align: center;
+    }
+}
